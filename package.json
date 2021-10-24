@@ -1,0 +1,19 @@
+{
+  "name": "inicializando",
+  "version": "1.0.0",
+  "description": "portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseluiscodesk8/inicializando.git"
+  },
+  "author": "Jose Luis Gomez A. jlgomezangarita@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joseluiscodesk8/inicializando/issues"
+  },
+  "homepage": "https://github.com/joseluiscodesk8/inicializando#readme"
+}
