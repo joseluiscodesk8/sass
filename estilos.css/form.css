@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(35, 42, 41, 0.1);
+}
+
+.form {
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 400px;
+  background: rgba(154, 177, 172, 0.3);
+  animation-name: form;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  box-shadow: inset 0 0 2px #000, 0 0 2px #000;
+}
+
+@keyframes form {
+  50% {
+    box-shadow: inset 0 0 10px #000, 0 0 10px #000;
+  }
+}
+
+.controls,
+.boton {
+  display: block;
+  width: 100%;
+}
+
+.controls:focus + .form-label {
+  transform: translate(10px, -118px);
+}
+
+.fijar {
+  transform: translate(10px, -118px);
+}
+
+.controls {
+  padding: 15px;
+  margin: 40px auto;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.controls:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.form-label {
+  transform: translate(10px, -70px);
+  position: absolute;
+  font-size: 16px;
+  font-family: "cursive";
+  font-weight: bold;
+  text-transform: capitalize;
+  z-index: -20;
+  transition: 1s;
+}
+
+.boton {
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: transparent;
+  transition: 0.8s;
+}
+
+.boton:hover {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/*footer*/
+
+footer {
+  transform: translate(0, 11rem);
+  padding: 0.8rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 40px;
+  padding: 5px;
+  transform: translate(655px);
+  border-radius: 15%;
+  transition: 1s;
+}
+
+img:hover {
+  box-shadow: 0 2px 6px #000;
+}

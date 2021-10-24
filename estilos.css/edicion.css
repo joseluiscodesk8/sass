@@ -14,6 +14,15 @@ div.contenedor {
   align-items: center;
 }
 
+img {
+  width: 100%;
+  box-shadow: 0 0 5px #1416, 0 0 5px #1416;
+}
+
+img:hover {
+  box-shadow: 0 0 5px #424242, 0 0 5px #424242;
+}
+
 /*cuadrado*/
 
 div.cuadrado {
@@ -35,7 +44,7 @@ div.cubo {
   margin-top: 70px;
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 10px #1416, 0 0 40px #1416;
-  transition: 0.3s;
+  transition: 1s;
   transition-delay: 0.3s;
 }
 
@@ -60,6 +69,7 @@ p.texto {
   padding: 15px;
   color: #ffff;
   text-align: center;
+  margin-top: 6rem;
   transition: 0.2s;
   transition-delay: 0.2s;
 }
@@ -70,15 +80,6 @@ div.cubo:hover .icon {
 
 div.cubo:hover .texto {
   opacity: 0;
-}
-
-img {
-  width: 100%;
-  box-shadow: 0 0 5px #1416, 0 0 5px #1416;
-}
-
-img:hover {
-  box-shadow: 0 0 5px #424242, 0 0 5px #424242;
 }
 
 /*cuadrado2*/
@@ -102,7 +103,7 @@ div.cubo2 {
   margin-top: 70px;
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 10px #1416, 0 0 40px #1416;
-  transition: 0.3s;
+  transition: 1s;
   transition-delay: 0.3s;
 }
 
@@ -127,6 +128,7 @@ p.texto2 {
   padding: 15px;
   color: #ffff;
   text-align: center;
+  margin-top: 6rem;
   transition: 0.2s;
   transition-delay: 0.2s;
 }
@@ -160,7 +162,7 @@ div.cubo3 {
   margin-top: 70px;
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 10px #1416, 0 0 40px #1416;
-  transition: 0.3s;
+  transition: 1s;
   transition-delay: 0.3s;
 }
 
@@ -185,6 +187,7 @@ p.texto3 {
   padding: 15px;
   color: #ffff;
   text-align: center;
+  margin-top: 6rem;
   transition: 0.2s;
   transition-delay: 0.2s;
 }
@@ -218,7 +221,7 @@ div.cubo4 {
   margin-top: 70px;
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 10px #1416, 0 0 40px #1416;
-  transition: 0.3s;
+  transition: 1s;
   transition-delay: 0.3s;
 }
 
@@ -243,6 +246,7 @@ p.texto4 {
   padding: 15px;
   color: #ffff;
   text-align: center;
+  margin-top: 6rem;
   transition: 0.2s;
   transition-delay: 0.2s;
 }
@@ -257,21 +261,16 @@ div.cubo4:hover .texto4 {
 
 /*footer*/
 .pie {
-  margin-top: 20px;
-  margin-left: 45%;
+  margin-top: 25px;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .regreso {
-  width: 50px;
-  background: transparent;
-  border-radius: 35%;
-  border: 2px dashed #23baca;
-  transition: 0.3s;
-}
-
-.regreso:hover {
-  border: 1px dashed #23baca;
-  box-shadow: 0 0 2px #000, 0 0 3px #000;
+  width: 40px;
+  padding: 5px;
+  transform: translate(655px);
+  transition: 1s;
 }
 
 /*responsive*/

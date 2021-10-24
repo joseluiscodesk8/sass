@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(170deg, #dbeae8, #0101, #959797, #0101, #dbeae8);
+  background-repeat: no-repeat;
+}
+
+/*header*/
+
+header {
+  background: rgba(219, 234, 232, 0.7);
+  width: 60%;
+  height: 115px;
+  margin: 40px auto;
+  box-shadow: 1px 2px 5px #000, 0 0 5px #00ffff;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  flex: 1;
+}
+
+#uno {
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+a img.icon1 {
+  border: 1px solid #ff0000;
+  box-shadow: 0 0 6px #ff0000;
+}
+
+#dos {
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+a img.icon2 {
+  border: 1px solid #11ba0f;
+  box-shadow: 0 0 6px #4dff00;
+}
+#tres {
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+a img.icon3 {
+  border: 1px solid #0027ff;
+  box-shadow: 0 0 6px #0027ff;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+img.icon1,
+.icon2,
+.icon3 {
+  border-radius: 15%;
+  width: 50px;
+  padding: 10px;
+  transform: translate(0, 15px);
+  background: rgba(245, 246, 246, 0.5);
+  box-shadow: 0 0 5px #fff, 0 0 5px #1416;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28px;
+  text-transform: capitalize;
+  color: #fff;
+  text-shadow: 0 2px 6px #000;
+  text-decoration-color: black;
+  transform: translate(0, -25px);
+  letter-spacing: 1.5 px;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.3s;
+}
+
+/*hover*/
+
+a:hover img.icon1 {
+  box-shadow: inset 0 0 6px #ff0000;
+  opacity: 0;
+}
+a:hover h2 {
+  opacity: 1;
+}
+
+a:hover img.icon2 {
+  box-shadow: inset 0 0 6px #4dff00;
+  opacity: 0;
+}
+
+a:hover img.icon3 {
+  box-shadow: inset 0 0 6px #0027ff;
+  opacity: 0;
+}
+
+/*caja*/
+
+div.caja {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.caja1 {
+  position: relative;
+  width: 302px;
+  height: 390px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  transition: 1s;
+}
+
+div.caja1 > div.img {
+  position: absolute;
+  z-index: 100;
+  transform: translate(0, 0);
+  transition: 2.5s;
+}
+
+div.caja1:hover > div.img {
+  opacity: 0.5;
+  transform: translate(0, 390px);
+}
+
+div.caja1:hover {
+  box-shadow: inset 0 0 10px #000;
+}
+
+img.jose {
+  width: 300px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 0 #000;
+  transition: 2s;
+  transition-delay: 1s;
+}
+
+div.caja1:hover .title {
+  text-shadow: 0 2px 6px #000;
+}
+
+div.caja2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 390px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transition: 1s;
+}
+
+div.caja2:hover {
+  box-shadow: inset 0 0 5px #000;
+}
+
+h1 {
+  padding: 40px;
+  transform: translate(0, 120px);
+  transition: 2s;
+  transition-delay: 0.6s;
+}
+
+div.caja2:hover > h1 {
+  transform: translate(0, 0);
+}
+
+p {
+  padding: 30px;
+  text-align: center;
+  font-family: Arial Narrow Bold, sans-serif, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  opacity: 0;
+  transition: 3s;
+  transition-delay: 0.5s;
+}
+
+div.caja2:hover > p {
+  opacity: 1;
+}
+
+/*porcentajes*/
+
+div.porcentaje {
+  display: flex;
+  height: 600px;
+}
+
+div.degradado {
+  position: relative;
+  top: 50px;
+  display: flex;
+  width: 700px;
+  height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translate(550px);
+  box-shadow: 0 0 5px #000;
+}
+
+div.card {
+  position: relative;
+  width: 200px;
+  height: 220px;
+  display: flex;
+  margin: 10px;
+  top: 2.5%;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(0deg #1b1b1b, #222, #1b1b1b);
+  overflow: hidden;
+  border: 0;
+  transition: 1s;
+  transition-delay: 0.6s;
+}
+
+div.card:hover {
+  transform: translate(0, -10px);
+  box-shadow: 0 65px 25px #424242;
+}
+
+svg {
+  position: absolute;
+  z-index: 100;
+  width: 150px;
+  height: 150px;
+  transform: translate(30px, -100px);
+  border-radius: 50%;
+  border: 1px solid #000;
+  box-shadow: inset 0 0 45px #000, inset 0 0 45px #000;
+}
+
+svg circle {
+  transform: translate(4px, 4px);
+  width: 80px;
+  height: 80px;
+  fill: none;
+  stroke: #000;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+div.card:hover svg {
+  box-shadow: inset 0 0 5px #fff;
+}
+
+h4 {
+  font-size: 15px;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  transform: translate(85px, -30px);
+  transition: 1s;
+  transition-delay: 0.3s;
+}
+
+div.card:hover h4 {
+  transform: translate(62px, -45px);
+  font-size: 40px;
+  opacity: 1;
+  color: #fff;
+  text-shadow: 10px 3px 10px #000;
+}
+
+h6.ilus,
+h6.java {
+  position: absolute;
+  transform: translate(75px, 75px);
+  font-size: 15px;
+}
+
+h6.clip {
+  position: absolute;
+  transform: translate(58px, 75px);
+  font-size: 15px;
+}
+
+h6.ht {
+  position: absolute;
+  transform: translate(90px, 75px);
+  font-size: 15px;
+}
+
+h6.cs {
+  position: absolute;
+  transform: translate(100px, 75px);
+  font-size: 20px;
+}
+
+h5 {
+  position: absolute;
+  z-index: 100;
+  transform: translate(70px, 75px);
+  color: #000;
+  font-size: 15px;
+}
+
+div.card:nth-child(1) svg circle:nth-child(1) {
+  stroke-dasharray: calc(300 - (300 * 30) / 100);
+  stroke-width: 0;
+  transition: 1s;
+}
+
+div.card:hover:nth-child(1) svg circle:nth-child(1) {
+  stroke: #000fff;
+  stroke-width: 10;
+}
+
+div.card:nth-child(2) svg circle:nth-child(1) {
+  stroke-dasharray: calc(300 - (300 * 40) / 100);
+  stroke-width: 0;
+  transition: 1s;
+}
+
+div.card:hover:nth-child(2) svg circle:nth-child(1) {
+  stroke: #ff8000;
+  stroke-width: 10;
+}
+
+div.card:nth-child(3) svg circle:nth-child(1) {
+  stroke-dasharray: calc(440 - (440 * 80) / 120);
+  stroke-width: 0;
+  transition: 1s;
+}
+
+div.card:hover:nth-child(3) svg circle:nth-child(1) {
+  stroke: #b2aaa2;
+  stroke-width: 10;
+}
+
+div.card:nth-child(4) svg circle:nth-child(1) {
+  stroke-dasharray: calc(300 - (300 * 30) / 100);
+  stroke-width: 0;
+  transition: 1s;
+}
+
+div.card:hover:nth-child(4) svg circle:nth-child(1) {
+  stroke: #d36a01;
+  stroke-width: 10;
+}
+
+div.card:nth-child(5) svg circle:nth-child(1) {
+  stroke-dasharray: calc(300 - (300 * 45) / 100);
+  stroke-width: 0;
+  transition: 1s;
+}
+
+div.card:hover:nth-child(5) svg circle:nth-child(1) {
+  stroke: #0080ff;
+  stroke-width: 10;
+}
+
+div.card:nth-child(6) svg circle:nth-child(1) {
+  stroke-dasharray: calc(100 - (100 * 1) / 1);
+  stroke-width: 0;
+  transition: 1s;
+}
+
+div.card:hover:nth-child(6) svg circle:nth-child(1) {
+  stroke: #d70909;
+  opacity: 0.5;
+  stroke-width: 10;
+}
+
+div.foot {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 40px;
+}
+
+footer {
+  display: flex;
+}
+
+footer img {
+  width: 20px;
+  transform: translate(600px, 3px);
+  margin: 5px;
+}
+
+p.feet {
+  font-size: 10px;
+  text-transform: capitalize;
+  transform: translate(10px, 15px);
+  color: #000;
+  opacity: 1;
+  padding: 0;
+  text-align: start;
+}
+
+/*resposive*/
+
+@media (max-width: 700px) {
+  header {
+    width: 90%;
+    height: 80px;
+    margin: 10px auto;
+  }
+
+  a img.icon1 {
+    border: 0.5px solid #ff0000;
+    box-shadow: 0 0 1px #ff0000;
+    transform: translate(15px, 15px);
+  }
+
+  a img.icon2 {
+    border: 0.5px solid #11ba0f;
+    box-shadow: 0 0 1px #4dff00;
+    transform: translate(15px, 15px);
+  }
+
+  a img.icon3 {
+    border: 0.5px solid #0027ff;
+    box-shadow: 0 0 1px #0027ff;
+    transform: translate(10px, 15px);
+  }
+
+  a {
+    margin: 0;
+  }
+
+  img.icon1,
+  .icon2,
+  .icon3 {
+    width: 45px;
+    padding: 7px;
+    transform: translate(0, 3px);
+  }
+
+  div.caja {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  div.caja1 {
+    width: 200px;
+    height: 288px;
+    transform: translate(95px);
+  }
+
+  img.jose {
+    width: 100%;
+    height: 300px;
+  }
+
+  div.caja2 {
+    width: 300px;
+    transform: translate(40px, 25px);
+  }
+
+  div.porcentaje {
+    border: 1px solid #000;
+  }
+
+  div.degradado {
+    transform: translate(0, 0);
+  }
+}

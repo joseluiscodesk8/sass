@@ -5,8 +5,8 @@ body {
 
 div.contenedor {
   display: flex;
-  width: 1450px;
-  height: 570px;
+  width: 1290px;
+  height: 550px;
   padding: 2% 2%;
 }
 
@@ -16,7 +16,7 @@ div.box {
   margin: 9px;
   box-shadow: 0 0 10px #424242;
   line-height: 0;
-  transition: 0.3s;
+  transition: 2s;
   transition-delay: 0.3s;
 }
 
@@ -39,42 +39,45 @@ div.box span {
   line-height: 1.8;
   color: rgb(201, 200, 178);
   text-shadow: 0 0 2.5px #000;
+  transition: 1.9s;
 }
 
 div.box:hover {
-  flex: 75%;
+  flex: 95%;
   box-shadow: 0 0 0;
-}
-
-div.box:hover img {
-  width: 100%;
-  height: 100%;
 }
 
 div.box:hover img#uno {
   width: 500px;
-  margin-left: 25%;
+  transform: translate(330px);
   box-shadow: 0 0 10px #000;
 }
 
 div.box:hover img#dos {
   width: 300px;
-  margin-left: 35%;
+  transform: translate(430px);
   box-shadow: 0 0 10px #000;
 }
 div.box:hover img#tres {
+  width: 680px;
+  transform: translate(250px);
   box-shadow: 0 0 10px #1416;
 }
 div.box:hover img#cuatro {
   width: 400px;
-  margin-left: 30%;
+  transform: translate(380px);
   box-shadow: 0 0 10px #000;
 }
 
 div.box:hover img#cinco {
   width: 400px;
-  margin-left: 30%;
+  height: auto;
+  transform: translate(380px);
   box-shadow: 0 0 10px #000;
+}
+
+div.box:hover span {
+  opacity: 0;
 }
 
 footer.pie {
