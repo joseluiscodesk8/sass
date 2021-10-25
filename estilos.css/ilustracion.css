@@ -24,7 +24,7 @@ div.box img {
   width: 100%;
   height: calc(100% - 10vh);
   object-fit: cover;
-  transition: 0.3s;
+  transition: 1s;
   transition-delay: 0.3s;
 }
 
