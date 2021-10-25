@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css/estilos.css">
+    <link rel="stylesheet" href="/src/main.css">
     <title>portafolio</title>
 </head>
 
@@ -14,23 +14,23 @@
     <header>
         <nav>
             <ul>
-                <li id="uno"><a href="/html/edicion.html">
-                        <img  class="icon1" src="./icon/edi.png" />
+                <li><a href="/public/html/edicion.html">
+                        <img  class="icon1" src="/icon/edi.png" />
                         <h2>edición</h2>
                     </a></li>
-                <li id="dos"><a href="/html/ilustreacion.html"><img class="icon2" src="./icon/ilus.png" />
+                <li><a href="/public/html/ilustreacion.html"><img class="icon2" src="/icon/ilus.png" />
                         <h2>ilustración</h2>
                     </a></li>
-                <li id="tres"><a href="/html/form.html"><img class="icon3" src="./icon/desa.png" />
+                <li><a href="/public/html/form.html"><img class="icon3" src="/icon/desa.png" />
                         <h2>desarrollo</h2>
                     </a></li>
             </ul>
         </nav>
     </header>
-    <div class="caja" >
+    <main class="caja" >
         <div class="caja1" >
             <div class="img">
-                <img class="jose" src="./ilustraciones/jose.jpg" />
+                <img src="/ilustraciones/jose.jpg" />
             </div>
             <div class="title" >
                 <h3>josé luís gómez</h3></br>
@@ -46,8 +46,8 @@
                 Que antes parecían imposibles en la mente.<br>
                 Estos conocimientos invaden tu mente y cuando menos lo esperas cuando duermes eres como Einstein, procesando cientos de códigos en tu mente que después deberán ser probados y tal vez se puedas alcanzar el teorema de Pitágoras del mundo del código.</p>
         </div>
-    </div>
-    <div class="porcentaje" >
+    </main>
+    <section class="porcentaje"
         <div class="degradado">
             <div class="card">
                 <div class="box">
@@ -58,7 +58,7 @@
                     </div>
                     <div class="number">
                         <h4>60%</h4>
-                        <h5>photoshop</h5>
+                        <h6 class="uno">photoshop</h6>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="number">
                         <h4>70%</h4>
-                        <h6 class="ilus" >ilustrator</h6>
+                        <h6 class="uno" >ilustrator</h6>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="number">
                         <h4>80%</h4>
-                        <h6 class="clip" >clipstudio paint</h6>
+                        <h6 class="dos" >clipstudio paint</h6>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="number">
                         <h4>60%</h4>
-                        <h6 class="ht" >html</h6>
+                        <h6 class="tres" >html</h6>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="number">
                         <h4>70%</h4>
-                        <h6 class="cs">css</h6>
+                        <h6 class="tres">sass</h6>
                     </div>
                 </div>
             </div>
@@ -122,21 +122,24 @@
                         </svg>
                     </div>
                     <div class="number">
-                        <h4 class="cuatro" >0%</h4>
-                        <h6 class="java" >javascript</h6>
+                        <h4>0%</h4>
+                        <h6 class="uno">javascript</h6>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="foot" >
-        <footer>
-            <div><p class="feet" >jose luis gpmez angarita, desarrollor web, diseño grafico y ilustracion. todos los derechos reservados</p></div>
-            <div><img src="./icon/edi.png">
-                <img src="./icon/ilus.png">
-                <img src="./icon/desa.png"></div>
+    </section>
+    <footer>
+           <figure>
+            <img src="/icon/edi.png" alt="" />
+            <img src="/icon/ilus.png" alt="" /> 
+            <img src="/icon/desa.png" alt="" />
+           </figure>
+           <div class="span" >
+            <span>jose luis gomez angarita, desarrollor web, diseño grafico y ilustracion. todos los derechos reservados</span>
+           </div>
         </footer>
-    </div>
+
 
 
 </body>

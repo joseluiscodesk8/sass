@@ -1,0 +1,68 @@
+.porcentaje
+  display: flex
+  margin: 25px 15px
+  margin-left: 550px
+  width: 44vw
+  height: 80vh
+  box-shadow: $sombra
+  flex-wrap: wrap
+  justify-content: end
+
+.card
+  position: relative
+  width: 13vw
+  height: 32vh
+  display: flex
+  margin: 10px
+  top: 5%
+  justify-content: center
+  align-items: center
+  transition: 1s
+  transition-delay: 0.6s
+  &:hover
+    transform: translate(0, -.6rem)
+    box-shadow: 0 65px 25px #424242
+    &:hover
+      svg
+        circle
+          stroke-width: 10
+    &:hover
+      h4
+        transform: translate(2.3rem, -6rem)
+        font-size: 2.2rem
+        opacity: 1
+        color: #fff
+        text-shadow: 3px 3px 10px #000
+    &:hover
+svg
+  width: 10vw
+  height: 20vh
+  border-radius: 50%
+  background: rgba(0,0,0, 0)
+  box-shadow: inset 10px 8px 16px 2px#000
+  transition: 1s
+  &:hover
+    background: rgba(141,151,140, .2)
+
+  circle
+    fill: none
+    stroke: rgba(0,0,0,.1s)
+    stroke-width: 140
+    stroke-linecap: round
+    transition: 1.5s
+
+h4
+  font-size: 1rem
+  transform: translate(3.9rem, -5.4rem)
+  opacity: 0
+  transition: 2s
+
+h6
+  font-size: .8rem
+  text-transform: uppercase
+.uno
+  transform: translate(2.2rem)
+.dos
+  transform: translate(1.3rem)
+.tres
+  transform: translate(3.6rem)
