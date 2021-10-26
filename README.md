@@ -1,2 +1,3 @@
 # inicializando
-trabajo en mi portafolio profesional 
+
+trabajo en mi portafolio profesional
