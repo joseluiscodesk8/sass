@@ -1,34 +1,32 @@
-// *
-//   @include body()
-
-// .museo
-//   display: grid
-//   grid-template-columns: repeat(auto-fit(4, 1fr))
-//   grid-gap: 1.2rem
-//   width: 100%
-//   height: 100%
-//   border: 1px solid #000
-//   // transform: translate(25px)
-//   transition: 3s
-//   a
-//     img
-//       width: 12rem
-//       height: 100%
-//       padding: .5rem
-//       object-fit: cover
-//       filter: blur()
-//       transition: 2s
-//       &:hover
-//         filter: blur(0)
-//         box-shadow: $sombra
+.museo
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: 10px auto
+    padding: 5px
+    width: 90vw
+    height: 100vh
+img.arte
+    width: 16rem
+    height: 48vh
+    padding: .5rem
+    object-fit: cover
+    filter: blur(100px)
+    transition: 2s
+    &:hover
+        filter: blur(0)
+        box-shadow: $sombra
 
 // div:nth-child(2)
-//   border: 1px solid #000
-//   background: #1416
+//     border: 1px solid #000
+//     background: #1416
 
-// footer
-//   a
-//     img
-//       width: 2.6rem
-//       padding: .4rem
-//       transform: translate(38rem)
+footer
+a
+    img.pie
+        width: 2.7rem
+        padding: .4rem
+        border-radius: 15%
+        transform: translate(1rem)
+        &:hover
+            box-shadow: $sombra

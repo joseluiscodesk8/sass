@@ -1,7 +1,7 @@
 *
   @include body()
 
-.form
+form
   margin: 20px auto
   padding: 25px
   border: 1px solid #ccc
@@ -23,52 +23,47 @@
 
 .controls
   padding: 15px
-  margin: 30px auto
+  margin: 20px auto
   background: transparentize
+  transform: translate(-.1rem, 1rem)
   border: 1px solid rgba(0, 0, 0, 0)
   &:hover
     background: rgba(255, 255, 255, 0.5)
 
-// .fijar {
-//   transform: translate(10px, -118px);
-// }
+.fijar
+  transform: translate(.8rem, -30rem)
 
 .form-label
-  transform: translate(10px, -70px)
-  position: absolute
-  font-size: 16px
+  font-size: 1rem
   font-family: "cursive"
   font-weight: bold
   text-transform: capitalize
   z-index: -20
   transition: 1s
 .controls:focus + .form-label
-  transform: translate(10px, -118px)
+  transform: translate(1rem, -30rem)
 
-// .boton {
-//   border: 1px solid rgba(0, 0, 0, 0);
-//   background: transparent;
-//   transition: 0.8s;
-// }
-
-// .boton:hover {
-//   background: rgb(255, 255, 255);
-//   border: 1px solid rgba(0, 0, 0, 0.2);
-// }
+.boton
+  border: 1px solid rgba(0, 0, 0, 0)
+  background: transparent
+  transition: 0.8s
+  &:hover
+    background: rgb(255, 255, 255)
+    border: 1px solid rgba(0, 0, 0, 0.2)
 
 /*footer*/
 
-// footer
-//   margin-top: 163px
-//   padding: 10px
-//   border-top: 1px solid rgba(0, 0, 0, 0.1)
+footer
+  margin-top: 163px
+  padding: 10px
+  border-top: 1px solid rgba(0, 0, 0, 0.1)
 
-// img
-//   width: 40px
-//   padding: 5px
-//   transform: translate(655px)
-//   border-radius: 15%
-//   transition: 1s
+img
+  width: 40px
+  padding: 5px
+  transform: translate(1rem)
+  border-radius: 15%
+  transition: 1s
 
-// img:hover
-//   box-shadow: 0 2px 6px #000
+img:hover
+  box-shadow: 0 2px 6px #000
