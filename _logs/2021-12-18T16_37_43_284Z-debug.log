@@ -1,0 +1,46 @@
+0 verbose cli [
+0 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+0 verbose cli   'C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+0 verbose cli   'run',
+0 verbose cli   'start'
+0 verbose cli ]
+1 info using npm@8.1.1
+2 info using node@v14.15.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:C:\Users\user\AppData\Roaming\npm\node_modules\npm\npmrc Completed in 8ms
+6 timing config:load:builtin Completed in 8ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\Users\user\Documents\trabajos\sass\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:C:\Users\user\.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:C:\Users\user\AppData\Roaming\npm\etc\npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 16ms
+19 timing npm:load:configload Completed in 17ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing npm:load:setupLog Completed in 1ms
+22 timing config:load:flatten Completed in 2ms
+23 timing npm:load:cleanupLog Completed in 3ms
+24 timing npm:load:configScope Completed in 0ms
+25 timing npm:load:projectScope Completed in 0ms
+26 timing npm:load Completed in 24ms
+27 timing command:run-script Completed in 2ms
+28 verbose stack Error: ENOENT: no such file or directory, open 'C:\Users\user\Documents\trabajos\sass\package.json'
+29 verbose cwd C:\Users\user\Documents\trabajos\sass
+30 verbose Windows_NT 10.0.19042
+31 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "run" "start"
+32 verbose node v14.15.0
+33 verbose npm  v8.1.1
+34 error code ENOENT
+35 error syscall open
+36 error path C:\Users\user\Documents\trabajos\sass/package.json
+37 error errno -4058
+38 error enoent ENOENT: no such file or directory, open 'C:\Users\user\Documents\trabajos\sass\package.json'
+39 error enoent This is related to npm not being able to find a file.
+40 verbose exit -4058
